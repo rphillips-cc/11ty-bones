@@ -1,0 +1,8 @@
+{
+  "name": "11ty-bones",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0-alpha.6"
+  }
+}

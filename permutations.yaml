@@ -1,0 +1,27 @@
+# Naming scheme: version-extension-contents?-resolution?-package?
+# no contents = same as extension
+# no resolution = not async
+# no package = commonjs
+
+0-default: .eleventy.js (cjs contents)
+
+1-default: .eleventy.js (cjs contents)
+
+2-default: .eleventy.js (cjs contents)
+2-cjs: eleventy.config.cjs
+2-js: eleventy.config.js (cjs contents)
+
+3-default-cjs: .eleventy.js (cjs contents)
+3-default-mjs-module: .eleventy.js module (mjs contents)
+3-cjs: eleventy.config.cjs
+3-cjs-async: eleventy.config.cjs async
+3-cjs-module: eleventy.config.cjs module
+3-cjs-async-module: eleventy.config.cjs async module
+3-mjs: eleventy.config.mjs
+3-mjs-async: eleventy.config.mjs async
+3-mjs-module: eleventy.config.mjs module
+3-mjs-async-module: eleventy.config.mjs async module
+3-js-cjs: eleventy.config.js (cjs contents)
+3-js-cjs-async: eleventy.config.js async (cjs contents)
+3-js-mjs-module: eleventy.config.js module (mjs contents)
+3-js-mjs-async-module: eleventy.config.js async module (mjs contents)
